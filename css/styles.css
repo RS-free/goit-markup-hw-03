@@ -10,7 +10,13 @@
 
   --main-fonts: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
+
+  --margin: 50px;
+  --card-set-gap: 30px;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+
 body {
   font-size: 14px;
   font-family: var(--main-fonts);
@@ -21,6 +27,7 @@ body {
 
 .list {
   list-style: none;
+  /* скидання відступів у списках*/
   padding: 0;
   margin: 0;
 }
@@ -53,10 +60,12 @@ p {
 .line {
   border-bottom: 1px solid #ececec;
 }
-.page-header > .conteiner {
+.page-header,
+.conteiner {
   display: flex;
   align-items: center;
 }
+
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -69,16 +78,42 @@ p {
   color: var(--main-text-color);
 }
 /* навігація */
+.nav {
+  margin-left: 93px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: var(--margin);
+}
+
 .site-nav .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  /*силка блочна та з внутрішніми відступами*/
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
 /* контакти */
+.contact-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-header .item + .item {
+  margin-left: var(--margin);
+}
+
 .contact {
   font-weight: 500;
   line-height: 1.17;
@@ -86,7 +121,7 @@ p {
   color: var(--additional-text-color);
 }
 .contact:hover,
-:focus {
+.contact:focus {
   color: var(--accent-text-color);
 }
 

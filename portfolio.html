@@ -12,31 +12,40 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <!-- Логотип -->
-      <a href="./" class="logo">Web<span class="studio">studio</span></a>
-      <!-- Посилання на навігацію сайту -->
-      <nav>
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
+    <header class="page-header line">
+      <div class="conteiner line header-conteiner">
+        <!-- Логотип -->
+        <a href="./" class="logo">Web<span class="studio">studio</span></a>
+        <!-- Посилання на навігацію сайту -->
+        <nav class="nav">
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li class="item">
+              <a href="" class="link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-header list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="section-portf-btn">
+      <section class="section section-portf-btn">
+        <div class="conteiner">
         <h2 class="name-section visually-hidden">Portfolio-section</h2>
         <ul class="list">
           <li>
@@ -138,6 +147,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
