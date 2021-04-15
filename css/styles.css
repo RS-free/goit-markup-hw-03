@@ -4,6 +4,7 @@
   --additional-text-color: #757575;
   --title-text-color: #ffffff;
   --bgc-color: #2f303a;
+  --third-bg-color: #f5f4fa;
   --secondary-bg-color: #e5e5e5;
   --adress-text: rgb(255, 255, 255, 60%);
   --button-color: #f5f4fa;
@@ -48,6 +49,11 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .conteiner {
   width: 1200px;
   padding-right: 15px;
@@ -60,8 +66,7 @@ p {
 .line {
   border-bottom: 1px solid #ececec;
 }
-.page-header,
-.conteiner {
+.header-conteiner {
   display: flex;
   align-items: center;
 }
@@ -165,8 +170,6 @@ p {
   letter-spacing: 0.06em;
 
   border-radius: 4px;
-}
-.pointer {
   cursor: pointer;
 }
 
@@ -226,6 +229,15 @@ p {
 }
 .text-name {
   color: var(--additional-text-color);
+}
+
+/* секція зайнятості */
+.picture.list {
+  display: flex;
+}
+
+.picture.list > .picture + .picture {
+  margin-left: 30px;
 }
 
 /* портфоліо */
