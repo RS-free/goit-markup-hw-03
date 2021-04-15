@@ -262,27 +262,65 @@ img {
 }
 
 /* портфоліо */
+.btn-portfolio {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.btn-portfolio > .btn-portfolio-item + .btn-portfolio-item {
+  margin-left: 8px;
+}
+
 .portfolio-button {
   background-color: var(--button-color);
   border: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
+
 .portfolio-button:hover,
 :focus {
   color: var(--accent-text-color);
 }
+
 .portf-link-title {
+  margin-bottom: 4px;
   color: var(--main-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .portf-link-text {
+  margin-bottom: 0;
   color: var(--additional-text-color);
   font-size: 16px;
   line-height: 1.8;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /* футер */
