@@ -289,18 +289,32 @@ img {
 .footer {
   background-color: #2f303a;
 }
+
+.footer > .conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
   color: var(--title-text-color);
   line-height: 1.7;
   font-style: inherit;
+  margin-top: 20px;
 }
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contacts-footer {
   color: var(--adress-text);
 }
+
 .contacts-footer:hover,
 :focus {
   color: var(--accent-text-color);
 }
+
 .logo-studio {
   color: var(--title-text-color);
 }
