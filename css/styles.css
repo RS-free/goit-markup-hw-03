@@ -63,6 +63,10 @@ img {
   margin-right: auto;
 }
 
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-conteiner {
   display: flex;
   align-items: center;
